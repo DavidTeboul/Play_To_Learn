@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+	<meta charset="utf-8">
+	<title>Play To Learn</title>
+    <style>
+        .button{
+        box-shadow: 3px 3px 0px 0px;
+         border: 5px #03f302 outset;
+   
+        border-radius:5px;
+          background-color: #1c87c9;
+      color: white;
+    
+         padding: 20px 34px;
+         text-align: center;
+         text-decoration: none;
+         font-size: 50px;
+         margin: 4px 2px;
+         cursor: pointer;
+         width: 500px;
+        margin-top:50px;
+}
+.button:hover {
+background-color: black;
+      color: white;
+  }
+  
+  
+  .container .btn {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #1c87c9;
+      color: white;
+      font-size: 16px;
+      padding: 0.5px 4px;
+      border: none;
+      cursor: pointer;
+      border-radius: 15px;
+      text-align: center;
+      margin-left: 60px;
+      margin-top: 40;
+    }
+
+.container .btn:hover {
+      background-color: black;
+      color: white;
+    }
+  
+.video{
+    padding-left: 1000px;
+    width: 150px;
+
+}
+</style>    
+</head>
+<body>
+    
+    <style type="text/css">
+      body {
+        
+      background-image:url(image/fond-home.jpg);
+      background-color:0;
+      
+        background-size:55em;
+       
+      }
+      </style>
+<iframe src="audio/1573485739.mp3" allow="autoplay" style=display:none id="iframeAudio"></iframe> 
+<iframe src="video/tenor.mp4" allow="autoplay" style=display:none id="iframeVideo"></iframe>
+<img src="image/playtoread.png" width="1000" style="
+    border-left-width: 100px;
+    padding-left:150px;
+">
+<div align="center">
+<input type="button" class="button" value="ENTER" onclick="window.location.href = 'https://playtolearn.website/Sign-in.html'";/>
+</div>
+<video autoplay class="video" id="playVideo" src="video/tenor.mp4"></video>
+<audio autoplay  id="playAudio">
+      <source src="audio/1573485739.mp3">
+</audio>
+<script>
+var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+    if(!isChrome){
+      $('#iframeAudio').remove()
+      $('#iframeVideo').remove()
+    }
+  else{
+     $('#playAudio').remove()
+     $('#iframeVideo').remove() //just to make sure that it will not have 2x audio in the background 
+    }
+</script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="js/video-hover.js"></script>
+
+</body>
+</html>

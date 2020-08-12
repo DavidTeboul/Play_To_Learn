@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>     
+        <script>
+            function checkPassword(form) { 
+                password = form.password.value;
+                password2 = form.password2.value;
+  
+                // If password not entered 
+                if (password == '') 
+                    alert ("Please enter Password"); 
+                      
+                // If confirm password not entered 
+                else if (password2 == '') 
+                    alert ("Please enter confirm password"); 
+                      
+                // If Not same return False.     
+                else if (password != password2) { 
+                    alert ("\nPassword did not match: Please try again...") 
+                    return false; 
+                } 
+            }          
+        </script>
+    	<title> Welcome to play to read !</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/Sign-up.css">
+	</head>
+
+	<body> 
+    <div class="imgcontainer">
+		<img src="image/imageLogin.png" alt="Avatar" class="avatar" style="width:250px; border-radius: 50%;   display: block;
+        margin-left: auto;
+        margin-right: auto;">
+	</div> 
+    <div class='Sign-up-form'>
+    <form method="post" action="formparents.php">   
+        <form onSubmit = "return checkPassword(this)"> 
+		<form method="post" action="formparents.php">
+			<div class="container">
+                <h1 style="text-align: center;"> Sign up</h1>
+				<label for="username"><b>Username</b></label>
+    			<input type="text" placeholder="Enter Username" name="username" required>
+
+			
+				<label for="pass"><b>Password</b></label>
+  				<input type="password" placeholder="Enter 4 digits" name="password" required>
+                <label for="password-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat 4 digits" name="password2" required>
+			
+				<label for="email"><b>Email</b> </label>
+                <input type="email" placeholder="Enter Email" name="email" required>          
+                <div class="champ">
+                    <label for="country"><b>Country</b></label>
+                    <select id="country" name="country">
+                        <option value="France">France</option>
+                        <option value="Belgia">Belgique</option>
+                        <option value="Swiss">Suisse</option>
+                        <option value="Israel">Israel</option>
+                        <option value="Algeria">Algérie</option>
+                        <option value="Tunisia">Tunisie</option>
+                        <option value="Maroco">Maroc</option>
+                        <option value="Madagascar">Madagascar</option>
+                        <option value="Benin">Bénin</option>
+                        <option value="Togo">Togo</option>
+                        <option value="Etats-Unis">Etats-unis</option>
+                        <option value="Canada">Canada</option>
+                    </select>
+                </div>
+            
+            </div>
+
+            <p>By creating an account you agree to our
+                <a 
+                href="#" style="color:#4CAF50">Terms & Privacy
+                </a>.
+            </p>
+            
+			 <div class="clearfix">
+                 <button type="button" class="cancelbtn" onclick="window.location.href = 'Sign-in.html';" >Cancel</button>
+                 <button type="submit" class="signupbtn">Sign Up</button>
+             </div>
+
+             <div class="text-center">Already have an account? <a href="Sign-in.html">Login here</a></div>
+        </form>
+    </div>
+    
+	</body>
+</html>

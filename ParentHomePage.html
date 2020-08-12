@@ -1,0 +1,253 @@
+﻿
+
+
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Hello world</title>
+    <style>
+        h1 {
+            color: #325e5f;
+            font-size: 70px;
+            font-style: oblique;
+        }
+
+        h2 {
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            margin: 5px;
+            color: cadetblue;
+            font-size: 40px;
+        }
+
+        h3 {
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            margin: 5px;
+            color: cadetblue;
+            font-size: 40px;
+        }
+
+        h4 {
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            margin: 5px;
+            color: cadetblue;
+            font-size: 40px;
+        }
+
+        h5 {
+            text-decoration: underline;
+        }
+        article{
+            color:#325e5f
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        }
+        .PHomebutton{
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            margin: 5px;
+            color: cadetblue;
+            font-size: 40px;
+            
+        }
+        .PHomebutton:hover {
+                background-color: #bbffff;
+                color: #325e5f;
+        }
+        .btn {
+            border: none;
+            font-size: 20px;
+            background-color: #325e5f;
+            padding: 20px 15px;
+            cursor: pointer;
+            display: inline-block
+            
+         
+        }
+
+         .share-btn {
+  display: inline-block;
+  color: #ffffff;
+  border: none;
+  padding: 0.1em 0.6em;
+  outline: none;
+  text-align: center;
+  font-size: 0.9em;
+  margin: 0 0.2em;
+}
+
+.share-btn:focus,
+.share-btn:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.share-btn:active {
+  color: #e2e2e2;
+}
+
+
+.share-btn.email { background: #444444; }
+    
+
+    .whatsapp{
+  display: none;
+  color: #1DC143;
+}
+
+.whatsapp:hover, .whatsapp:focus{
+  background: #1DC143;
+  color: #fff;
+  text-shadow: 0 0 1px rgba(0,0,0,0.2);
+}
+
+.whatsapp.activeWhatsapp{
+  display: inline-block;
+}
+
+.object{
+
+}
+    </style>
+</head>
+<body style="background-color: #bbffff">
+    <center>
+        <h1>Parent Page</h1>
+    </center>
+
+    <center>
+        <article> welcome to your "play to learan" page, you can follow yor childrens progresses here </article>
+    </center>
+
+
+
+    <!--headers-->
+    <center>
+        <div style="clear: both">
+
+        </div>
+
+        <hr />
+    </center>
+    <!--style="margin:10px 0;"-->
+
+    <center>
+        <button class="PHomebutton">Home</button>
+        <h2>
+            Home
+        </h2>
+        <h2>
+            Upcomming lessons
+        </h2>
+        <h3>
+            Your child's progress
+        </h3>
+    </center>
+
+    <!-- Slide Show -->
+    <censter>
+        <section>
+            <img class="ChildSlides" src="pGraph.jpg" style="width:100%">
+        </section>
+    </censter>
+
+
+
+    <object data="lesson1Explain.pdf" type="application/pdf" width="100%" height="100%">
+        <p><a href="files/lesson1Explain.pdf">lesson1 explain</a></p>
+    </object>
+
+    <object data="lesson1Explain.pdf" type="application/pdf" width="100%" height="100%">
+        <p><a href="files/lesson2Explain.pdf">lesson2 explain</a></p>
+    </object>
+
+    <object data="lesson1Explain.pdf" type="application/pdf" width="100%" height="100%">
+        <p><a href="files/lesson3Explain.pdf">lesson3 explain</a></p>
+    </object>
+
+    <object data="lesson1Explain.pdf" type="application/pdf" width="100%" height="100%">
+        <p><a href="files/lesson4Explain.pdf">lesson4 explain</a></p>
+    </object>
+
+
+    <!--social media -->
+    <a href="mailto:?subject= sharing you a fantastic website &body=http://playtolearn.website/
+       i would like to sharing you a fantastic website for your childrens" class="share-btn email">Email</a>
+
+    <!--Whatssap sharing-->
+    <a href="whatsapp://send?text=http://playtolearn.website/" class="botao-wpp">
+        <!-- ícone -->
+        <i class="fa fa-whatsapp"></i>
+        whatsapp
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Add icon library -->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+    -->
+    <!-- Navigation -->
+    <!--<center>
+        <nav class="p1-bar p1-black">
+            <a href="#home" class="p1-button p1-bar-item">Home</a>
+            <a href="#show upcomming lessons" class="p1-button p1-bar-item">Show upcomming lessons</a>
+            <a href="#Your child's progress" class="p1-button p1-bar-item">Your child's progress</a>
+
+        </nav>
+    </center>-->
+    <!--<div style="text-align: center">
+        <asp:Button ID="btnSubmit" runat="server" Text="Submit" Width="89px" OnClick="btnSubmit_Click" />
+        <asp:Button ID="btnClear" runat="server" Text="Clear" Width="89px" OnClick="btnClear_Click" />
+    </div>-->
+    <!--article-->
+
+
+
+    <script>
+        waShBtn = function () {
+            if (this.isIos === true) {
+                var b = [].slice.call(document.querySelectorAll(".wa_btn"));
+                for (var i = 0; i < b.length; i++) {
+                    var t = b[i].getAttribute("data-text");
+                    var u = b[i].getAttribute("data-href");
+                    var o = b[i].getAttribute("href");
+                    var at = "?text=" + encodeURIComponent(t);
+                    if (t) {
+                        at += "%20%0A";
+                    }
+                    if (u) {
+                        at += encodeURIComponent(u);
+                    } else {
+                        at += encodeURIComponent(document.URL);
+                    }
+                    b[i].setAttribute("href", o + at);
+                    b[i].setAttribute("target", "_top");
+                    b[i].setAttribute("target", "_top");
+                    b[i].className += ' activeWhatsapp';
+                }
+            }
+        }
+
+        waShBtn.prototype.isIos = ((navigator.userAgent.match(/Android|iPhone/i) && !navigator.userAgent.match(/iPod|iPad/i)) ? true : false);
+
+        var theWaShBtn = new waShBtn();
+    </script>
+
+
+</body>
+</html>
+
