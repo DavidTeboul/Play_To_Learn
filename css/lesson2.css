@@ -1,0 +1,40 @@
+élément {
+}
+
+body {
+     
+     background-image:url(image/image2Lesson2.jpg) 50% 0 no-repeat;
+        background-size: auto;
+    background-size: cover;
+}
+html, body {
+    height: 100%;
+    font-family: 'proxima_nova', Arial, sans-serif;
+    font-size: 16px;
+}
+body {
+    margin: 0;
+}
+html {
+    color: 
+    #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+
+button {
+            background-color: #00BFFF;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+       
+button:hover {
+            opacity: 0.8;
+        }
